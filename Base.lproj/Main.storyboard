@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Is_It_Prime_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is It Prime?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNA-Ef-vjW">
+                                <rect key="frame" x="231" y="80" width="138" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a number in the box" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vy3-hP-eWa">
+                                <rect key="frame" x="201" y="137" width="199" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. 17" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMY-Tu-y0l">
+                                <rect key="frame" x="269" y="195" width="63" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8S-JA-O8s">
+                                <rect key="frame" x="222" y="255" width="157" height="30"/>
+                                <state key="normal" title="Click Here: Is it Prime?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hTK-UM-R5h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVg-Bt-kb9">
+                                <rect key="frame" x="300" y="13" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgO-uE-xEh">
+                                <rect key="frame" x="300" y="329" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="G8S-JA-O8s" secondAttribute="centerX" id="Bby-3R-aUI"/>
+                            <constraint firstItem="bVg-Bt-kb9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="13" id="F5O-RK-nsC"/>
+                            <constraint firstItem="XMY-Tu-y0l" firstAttribute="top" secondItem="vy3-hP-eWa" secondAttribute="bottom" constant="37" id="GFD-aQ-82z"/>
+                            <constraint firstAttribute="centerX" secondItem="gNA-Ef-vjW" secondAttribute="centerX" id="JWV-fs-74O"/>
+                            <constraint firstAttribute="centerX" secondItem="ZgO-uE-xEh" secondAttribute="centerX" id="WIh-f7-6r8"/>
+                            <constraint firstItem="ZgO-uE-xEh" firstAttribute="top" secondItem="G8S-JA-O8s" secondAttribute="bottom" constant="44" id="ZdU-i9-gG0"/>
+                            <constraint firstItem="vy3-hP-eWa" firstAttribute="centerX" secondItem="gNA-Ef-vjW" secondAttribute="centerX" id="akt-SD-BMq"/>
+                            <constraint firstAttribute="centerX" secondItem="XMY-Tu-y0l" secondAttribute="centerX" id="bEo-QA-9E6"/>
+                            <constraint firstItem="vy3-hP-eWa" firstAttribute="centerX" secondItem="bVg-Bt-kb9" secondAttribute="centerX" id="bNF-Ow-gnm"/>
+                            <constraint firstItem="G8S-JA-O8s" firstAttribute="top" secondItem="XMY-Tu-y0l" secondAttribute="bottom" constant="30" id="gAl-YD-Vfi"/>
+                            <constraint firstItem="vy3-hP-eWa" firstAttribute="top" secondItem="gNA-Ef-vjW" secondAttribute="bottom" constant="23" id="idZ-sK-1Fs"/>
+                            <constraint firstItem="gNA-Ef-vjW" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="60" id="idi-mQ-rNh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterNumber" destination="XMY-Tu-y0l" id="Dbv-oa-Ikj"/>
+                        <outlet property="resultsField" destination="ZgO-uE-xEh" id="uAE-h3-Sk9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
